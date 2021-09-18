@@ -29,6 +29,5 @@ if __name__ == '__main__':
         res.append(toBin(bt))
     res = ''.join(res)
     encrypt(img, res)
-    print(img[0][0],img[0][1],img[0][2])
-#    cv2.imwrite("out.png", img, [cv2.IMWRITE_PNG_COMPRESSION, 0])
-    cv2.imwrite("out.bmp", img)
+    cv2.imwrite("out.png", img, [cv2.IMWRITE_PNG_COMPRESSION, 5])
+#    cv2.imwrite("out.bmp", img)
